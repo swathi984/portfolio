@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff;
+}
+
+header {
+    background-color: #008000; /* Slightly lighter green header */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1.animated-heading {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: fit-content;
+    margin: 0 auto;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+}
+
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+#about, #skills, #projects, #contact {
+    margin-top: 50px;
+}
+
+a {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0f0; /* Green hover effect */
+}
+
